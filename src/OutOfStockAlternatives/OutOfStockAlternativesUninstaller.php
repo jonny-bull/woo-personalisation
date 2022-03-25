@@ -1,15 +1,15 @@
 <?php
 /**
- * Example feature uninstall class.
+ * Out of Stock Alternatives feature uninstall class.
  *
  * @package BoxUk\WpPluginSkeleton
  */
 
 declare ( strict_types=1 );
 
-namespace BoxUk\WpPluginSkeleton\ExampleFeature;
+namespace BoxUk\WpPluginSkeleton\OutOfStockAlternatives;
 
-final class ExampleFeatureUninstaller {
+final class OutOfStockAlternativesUninstaller {
 	/**
 	 * Uninstall method to remove any data added by the plugin.
 	 *

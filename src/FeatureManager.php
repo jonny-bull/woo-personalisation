@@ -9,7 +9,7 @@ declare ( strict_types=1 );
 
 namespace BoxUk\WpPluginSkeleton;
 
-use BoxUk\WpPluginSkeleton\ExampleFeature\ExampleFeature;
+use BoxUk\WpPluginSkeleton\MostPopular\MostPopular;
 
 class FeatureManager {
 	/**
@@ -18,7 +18,7 @@ class FeatureManager {
 	 * @var FeatureInterface[]
 	 */
 	private const FEATURES = [
-		ExampleFeature::class,
+		MostPopular::class,
 	];
 
 	/**

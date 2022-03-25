@@ -16,5 +16,5 @@ phpunit.xml.dist
 phpcs.xml.dist
 travis.yml
 docker-compose.yml
-boxuk-skeleton-plugin.zip
+woo-personalisation.zip
 rector-downgrade.php

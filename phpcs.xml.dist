@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="BoxUK WordPress plugin">
-	<description>A custom set of rules to check for BoxUK WordPress plugins</description>
+<ruleset name="Woo Personalisation Plugin">
+	<description>A custom set of rules to check for the Woo Personalisation WordPress plugin</description>
 
 	<file>.</file>
 

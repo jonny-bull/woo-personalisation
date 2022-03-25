@@ -1,6 +1,6 @@
 {
-    "name": "boxuk/wp-plugin-skeleton",
-    "description": "A skeleton WordPress plugin to be used as a base for new WordPress plugins.",
+    "name": "boxuk/woo-personalisation",
+    "description": "Adds sales driving personalisation features to WooCommerce.",
     "type": "wordpress-plugin",
     "license": "GPL-3.0-or-later",
     "autoload": {

@@ -40,7 +40,7 @@ $WP core install --title="WP Site" --admin_user="admin" --admin_password="admin"
 $WP plugin activate "$PLUGIN_NAME"
 
 # Ensure plugin is enabled
-$WP option update boxuk_enable_plugin 1
+$WP option update woo_personalisation_enable_plugin 1
 
 # Run the functional tests:
 BEHAT_PARAMS='{"extensions" : {"PaulGibbs\\WordpressBehatExtension" : {"path" : "'$WP_CORE_DIR'"}}}' \

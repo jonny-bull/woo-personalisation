@@ -19,7 +19,7 @@ composer remove composer/installers --update-no-dev
 composer install --no-dev --optimize-autoloader
 
 # Zip up the plugin excluding tests and tools.
-zip -vr boxuk-skeleton-plugin.zip . -x "tests/*" -x "tools/*" -x "features/*" -x "DEVELOPMENT.md" -x "behat.yml" \
+zip -vr woo-personalisation.zip . -x "tests/*" -x "tools/*" -x "features/*" -x "DEVELOPMENT.md" -x "behat.yml" \
     -x "phpunit.xml.dist" -x "phpcs.xml.dist" -x "bin/*" -x ".git/*" -x ".DS_Store" -x ".github/*" \
     -x ".travis.yml" -x "docker-compose.yml" -x ".gitignore" -x "rector-downgrade.php"
 

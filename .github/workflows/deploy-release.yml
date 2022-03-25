@@ -33,24 +33,24 @@ jobs:
       uses: montudor/action-zip@v1
 
     - name: Zip output
-      run: zip -X -r ./boxuk-skeleton-plugin.zip . -x "*.git**" "*tests**" "*tools**" "*features**" "*DEVELOPMENT.md" "*behat.yml" "*phpunit.xml.dist" "*phpcs.xml.dist" "*bin**" "*.DS_Store" "*travis.yml" "*docker-compose.yml" "*rector-downgrade.php"
+      run: zip -X -r ./woo-personalisation.zip . -x "*.git**" "*tests**" "*tools**" "*features**" "*DEVELOPMENT.md" "*behat.yml" "*phpunit.xml.dist" "*phpcs.xml.dist" "*bin**" "*.DS_Store" "*travis.yml" "*docker-compose.yml" "*rector-downgrade.php"
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-          name: boxuk-skeleton-plugin
-          path: ./boxuk-skeleton-plugin.zip
+          name: woo-personalisation
+          path: ./woo-personalisation.zip
 
     - name: Upload to release
       uses: JasonEtco/upload-to-release@master
       with:
-        args: ./boxuk-skeleton-plugin.zip application/zip
+        args: ./woo-personalisation.zip application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 #    - name: WordPress Plugin Deploy
 #      uses: 10up/action-wordpress-plugin-deploy@1.4.1
 #      env:
-#        SLUG: boxuk-skeleton-plugin
+#        SLUG: woo-personalisation
 #        SVN_USERNAME: ${{ secrets.WPORG_SVN_USERNAME }}
 #        SVN_PASSWORD: ${{ secrets.WPORG_SVN_PASSWORD }}

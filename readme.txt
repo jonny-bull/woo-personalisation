@@ -1,6 +1,6 @@
-=== Box UK Plugin Skeleton - A skeleton plugin from Box UK ===
+=== WooCommerce Personalisation Blocks ===
 Contributors: boxuk
-Tags: boxuk, skeleton
+Tags: woocommerce, personalisation
 Requires at least: 5.0
 Tested up to: 5.8
 Stable tag: 1.0.0
@@ -8,7 +8,7 @@ Requires PHP: 7.2
 License: GPLv3+
 License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
-A Box UK skeleton plugin to be used as a base for all new plugins.
+Adds sales driving personalisation features to WooCommerce.
 
 == Description ==
 

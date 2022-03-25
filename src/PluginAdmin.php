@@ -30,8 +30,7 @@ class PluginAdmin {
 	 * @return void
 	 */
 	public static function enqueue_admin_styles(): void {
-		wp_enqueue_style( BOXUK_PLUGIN_SKELETON_PREFIX . '-admin-styles', BOXUK_PLUGIN_SKELETON_PLUGIN_URL . 'assets/css/' . BOXUK_PLUGIN_SKELETON_PREFIX . '-admin.css', [], BOXUK_PLUGIN_SKELETON_VERSION );
-		wp_enqueue_style( BOXUK_PLUGIN_SKELETON_PREFIX . '-dashicons', BOXUK_PLUGIN_SKELETON_PLUGIN_URL . 'assets/css/' . BOXUK_PLUGIN_SKELETON_PREFIX . '-icon.css', [], BOXUK_PLUGIN_SKELETON_VERSION );
+		wp_enqueue_style( WOO_PERSONALISATION_FILENAME_PREFIX . '-admin-styles', WOO_PERSONALISATION_PLUGIN_URL . 'assets/css/' . WOO_PERSONALISATION_FILENAME_PREFIX . '-admin.css', [], WOO_PERSONALISATION_VERSION );
 	}
 
 	/**
@@ -40,6 +39,6 @@ class PluginAdmin {
 	 * @return void
 	 */
 	public static function enqueue_admin_scripts(): void {
-		wp_enqueue_script( BOXUK_PLUGIN_SKELETON_PREFIX . '-admin-script', BOXUK_PLUGIN_SKELETON_PLUGIN_URL . 'assets/js/' . BOXUK_PLUGIN_SKELETON_PREFIX . '-admin.js', [], BOXUK_PLUGIN_SKELETON_VERSION, true );
+		wp_enqueue_script( WOO_PERSONALISATION_FILENAME_PREFIX . '-admin-script', WOO_PERSONALISATION_PLUGIN_URL . 'assets/js/' . WOO_PERSONALISATION_FILENAME_PREFIX . '-admin.js', [], WOO_PERSONALISATION_VERSION, true );
 	}
 }

@@ -46,7 +46,7 @@ class PluginUninstaller {
 	private function delete_settings(): void {
 		global $wpdb;
 
-		$plugin_prefix = BOXUK_PLUGIN_SKELETON_PREFIX;
+		$plugin_prefix = WOO_PERSONALISATION_PREFIX;
 		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE option_name LIKE '{$plugin_prefix}_%'" ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 	}
 }

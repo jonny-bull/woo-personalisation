@@ -51,7 +51,7 @@ class Plugin {
 	 * @return void
 	 */
 	public static function enqueue_styles(): void {
-		wp_enqueue_style( BOXUK_PLUGIN_SKELETON_PREFIX . '-frontend-styles', BOXUK_PLUGIN_SKELETON_PLUGIN_URL . 'assets/css/' . BOXUK_PLUGIN_SKELETON_PREFIX . '-frontend.css', [], BOXUK_PLUGIN_SKELETON_VERSION );
+		wp_enqueue_style( WOO_PERSONALISATION_FILENAME_PREFIX . '-frontend-styles', WOO_PERSONALISATION_PLUGIN_URL . 'assets/css/' . WOO_PERSONALISATION_FILENAME_PREFIX . '-frontend.css', [], WOO_PERSONALISATION_VERSION );
 	}
 
 	/**
@@ -60,6 +60,6 @@ class Plugin {
 	 * @return void
 	 */
 	public static function enqueue_scripts(): void {
-		wp_enqueue_style( BOXUK_PLUGIN_SKELETON_PREFIX . '-frontend-scripts', BOXUK_PLUGIN_SKELETON_PLUGIN_URL . 'assets/js/' . BOXUK_PLUGIN_SKELETON_PREFIX . '-frontend.js', [], BOXUK_PLUGIN_SKELETON_VERSION );
+		wp_enqueue_style( WOO_PERSONALISATION_FILENAME_PREFIX . '-frontend-scripts', WOO_PERSONALISATION_PLUGIN_URL . 'assets/js/' . WOO_PERSONALISATION_FILENAME_PREFIX . '-frontend.js', [], WOO_PERSONALISATION_VERSION );
 	}
 }

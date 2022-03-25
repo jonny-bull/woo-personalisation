@@ -23,16 +23,16 @@ if ( ! class_exists( PluginUninstaller::class ) ) {
 	return;
 }
 
-if ( ! defined( 'BOXUK_PLUGIN_SKELETON_PREFIX' ) ) {
-	define( 'BOXUK_PLUGIN_SKELETON_PREFIX', 'boxuk' );
+if ( ! defined( 'WOO_PERSONALISATION_PREFIX' ) ) {
+	define( 'WOO_PERSONALISATION_PREFIX', 'woo-personalisation' );
 }
 
 add_action(
-	BOXUK_PLUGIN_SKELETON_PREFIX . '_plugin_uninstall',
+	WOO_PERSONALISATION_PREFIX . '_plugin_uninstall',
 	function () {
 		$uninstaller = new PluginUninstaller( new FeatureManager() );
 		$uninstaller->uninstall();
 	}
 );
 
-do_action( BOXUK_PLUGIN_SKELETON_PREFIX . '_plugin_uninstall' );
+do_action( WOO_PERSONALISATION_PREFIX . '_plugin_uninstall' );
